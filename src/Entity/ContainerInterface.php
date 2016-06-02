@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctt\BlazonCms\Entity;
+namespace BlazonCms\Core\Entity;
 
 /**
  * Container Abstract.  Contains methods shared by container classes

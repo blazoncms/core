@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctt\BlazonCms\Entity;
+namespace BlazonCms\Core\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

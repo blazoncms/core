@@ -4,17 +4,17 @@ return [
     'dependencies' => [
         'factories' => [
             'doctrine.entity_manager.orm_vcms' => [\ContainerInteropDoctrine\EntityManagerFactory::class, 'orm_vcms'],
-            \Ctt\BlazonCms\Action\Index::class => \Ctt\BlazonCms\Action\Index::class,
-            \Ctt\BlazonCms\EventListener\DoctrineEventSubscriber::class => \Ctt\BlazonCms\EventListener\DoctrineEventSubscriber::class,
-            'Ctt\BlazonCms\Service\Cache' => \Ctt\BlazonCms\Cache\CacheFactory::class,
-            'doctrine.cache.orm_vcms' => \Ctt\BlazonCms\Cache\DoctrineCache::class
+            \BlazonCms\Core\Action\Index::class => \BlazonCms\Core\Action\Index::class,
+            \BlazonCms\Core\EventListener\DoctrineEventSubscriber::class => \BlazonCms\Core\EventListener\DoctrineEventSubscriber::class,
+            'BlazonCms\Core\Service\Cache' => \BlazonCms\Core\Cache\CacheFactory::class,
+            'doctrine.cache.orm_vcms' => \BlazonCms\Core\Cache\DoctrineCache::class
         ],
     ],
 
     'routes' => array(
         'contentManager' => array(
             'path' => '/vcms',
-            'middleware' => \Ctt\BlazonCms\Action\Index::class,
+            'middleware' => \BlazonCms\Core\Action\Index::class,
             'allowed_methods' => [ 'GET' ],
         ),
     ),
@@ -30,7 +30,7 @@ return [
         'event_manager' => [
             'orm_vcms' => [
                 'subscribers' => [
-                    \Ctt\BlazonCms\EventListener\DoctrineEventSubscriber::class => \Ctt\BlazonCms\EventListener\DoctrineEventSubscriber::class,
+                    \BlazonCms\Core\EventListener\DoctrineEventSubscriber::class => \BlazonCms\Core\EventListener\DoctrineEventSubscriber::class,
                     Gedmo\Sluggable\SluggableListener::class => Gedmo\Sluggable\SluggableListener::class
                 ],
             ],
@@ -39,7 +39,7 @@ return [
             'orm_vcms' => [
                 'class' => \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain::class,
                 'drivers' => [
-                    'Ctt\BlazonCms\Entity' => 'vcms',
+                    'BlazonCms\Core\Entity' => 'vcms',
                 ],
             ],
             'vcms' => [
@@ -50,7 +50,7 @@ return [
         ],
     ],
     
-    'Ctt\BlazonCms\Config' => [
+    'BlazonCms\Core\Config' => [
         'db_prefix' => 'ctt_',
         
         'cache' => [

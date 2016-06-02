@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctt\BlazonCms\Action;
+namespace BlazonCms\Core\Action;
 
 class Index
 {

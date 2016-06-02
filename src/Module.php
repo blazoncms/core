@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctt\BlazonCms;
+namespace BlazonCms\Core;
 
 class Module
 {

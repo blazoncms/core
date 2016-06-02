@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctt\BlazonCms\Exception;
+namespace BlazonCms\Core\Exception;
 
 class InvalidArgumentException extends \InvalidArgumentException
 {

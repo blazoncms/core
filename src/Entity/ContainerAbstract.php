@@ -1,8 +1,8 @@
 <?php
 
-namespace Ctt\BlazonCms\Entity;
+namespace BlazonCms\Core\Entity;
 
-use Ctt\BlazonCms\Exception\InvalidArgumentException;
+use BlazonCms\Core\Exception\InvalidArgumentException;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**

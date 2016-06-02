@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctt\BlazonCms\EventListener;
+namespace BlazonCms\Core\EventListener;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
@@ -47,8 +47,8 @@ class DoctrineEventSubscriber implements EventSubscriber
     {
         $config = $this->container->has('config') ? $this->container->get('config') : [];
         
-        if (!empty($config['Ctt\BlazonCms\Config']['db_prefix'])) {
-            return $config['Ctt\BlazonCms\Config']['db_prefix'];
+        if (!empty($config['BlazonCms\Core\Config']['db_prefix'])) {
+            return $config['BlazonCms\Core\Config']['db_prefix'];
         }
 
         return '';

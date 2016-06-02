@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctt\BlazonCms\Cache;
+namespace BlazonCms\Core\Cache;
 
 use Interop\Container\ContainerInterface;
 use Zend\Cache\StorageFactory;
@@ -14,10 +14,10 @@ class CacheFactory
         return StorageFactory::factory(
             [
                 'adapter' => [
-                    'name' => $config['Ctt\BlazonCms\Config']['cache']['adapter'],
-                    'options' => $config['Ctt\BlazonCms\Config']['cache']['options'],
+                    'name' => $config['BlazonCms\Core\Config']['cache']['adapter'],
+                    'options' => $config['BlazonCms\Core\Config']['cache']['options'],
                 ],
-                'plugins' => $config['Ctt\BlazonCms\Config']['cache']['plugins'],
+                'plugins' => $config['BlazonCms\Core\Config']['cache']['plugins'],
             ]
         );
     }

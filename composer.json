@@ -32,7 +32,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Ctt\\BlazonCms\\": "src"
+            "BlazonCms\\Core\\": "src"
         }
-    }
+    },
+    "bin": ["bin/cli-config.php"]
 }
