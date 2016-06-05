@@ -11,7 +11,10 @@ class DoctrineCache
         /** @var \Zend\Cache\Storage\StorageInterface $zendCache */
         $zendCache = $serviceLocator->get('BlazonCms\Core\Service\Cache');
 
-        return new ZendStorageCache($zendCache);
+        $cache = new ZendStorageCache();
+        $cache->setZendStorage($zendCache);
+
+        return $cache;
     }
 }
 

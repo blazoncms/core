@@ -46,7 +46,6 @@ class ZendStorageCache extends CacheProvider
      */
     public function setZendStorage(StorageInterface $storage)
     {
-        print "Here";
         $this->storage = $storage;
     }
 

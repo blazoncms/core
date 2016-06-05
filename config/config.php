@@ -45,7 +45,7 @@ return [
             'vcms' => [
                 'class' => \Doctrine\ORM\Mapping\Driver\AnnotationDriver::class,
                 'cache' => 'orm_vcms',
-                'paths' => __DIR__ . '/../src/Entity',
+                'paths' => [__DIR__ . '/../src/Entity'],
             ],
         ],
     ],

@@ -150,30 +150,6 @@ class PluginWrapper
     }
 
     /**
-     * @deprecated Use getRenderOrder()
-     * Get Order number to render instances that have the same container
-     *
-     * @return int Order to render Plugin Instance
-     */
-    public function getRenderOrderNumber()
-    {
-        return $this->getRenderOrder();
-    }
-
-    /**
-     * @deprecated Use setRenderOrder()
-     * Set the order number to render instances that have the same container.
-     *
-     * @param int $order Order to display in.
-     *
-     * @return null
-     */
-    public function setRenderOrderNumber($order)
-    {
-        $this->setRenderOrder($order);
-    }
-
-    /**
      * Set the plugin instance to be wrapped
      *
      * @param PluginInstance $instance Instance to wrap
