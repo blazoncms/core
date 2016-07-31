@@ -51,7 +51,7 @@ return [
     ],
     
     'BlazonCms\Core\Config' => [
-        'db_prefix' => 'ctt_',
+        'db_prefix' => 'bcms_',
         
         'cache' => [
             'adapter' => 'Memory',
