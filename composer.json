@@ -37,8 +37,10 @@
             "BlazonCms\\Core\\": "src"
         }
     },
-    "zf": {
-        "config-provider": "BlazonCms\\Installer\\Core"
+    "extra": {
+        "zf": {
+            "config-provider": "BlazonCms\\Installer\\Core"
+        }
     },
     "bin": ["bin/cli-config.php"]
 }
