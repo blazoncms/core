@@ -12,6 +12,7 @@
     ],
     "require": {
         "php": "^7.0",
+        "zendframework/zend-component-installer": "^0.3.0",
         "zendframework/zend-expressive": "^1.0",
         "zendframework/zend-expressive-helpers": "^2.0",
         "zendframework/zend-stdlib": "^3.0",
@@ -35,6 +36,9 @@
         "psr-4": {
             "BlazonCms\\Core\\": "src"
         }
+    },
+    "zf": {
+        "config-provider": "BlazonCms\\Installer\\Core"
     },
     "bin": ["bin/cli-config.php"]
 }
