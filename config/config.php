@@ -12,7 +12,7 @@ return [
     ],
 
     'routes' => array(
-        'contentManager' => array(
+        'vcms' => array(
             'path' => '/vcms',
             'middleware' => \BlazonCms\Core\Action\Index::class,
             'allowed_methods' => [ 'GET' ],
