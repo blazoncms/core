@@ -154,7 +154,7 @@ class Language
      */
     public function setIso6391($iso639_1)
     {
-        if (strlen($iso639_1) != 2) {
+        if (!is_null($iso639_1) && strlen($iso639_1) != 2) {
             throw new InvalidArgumentException(
                 'Iso 639-1 defines this code to be two digits in length.'
             );
@@ -187,7 +187,7 @@ class Language
      */
     public function setIso6392b($iso639_2b)
     {
-        if (strlen($iso639_2b) != 3) {
+        if (!is_null($iso639_2b) && strlen($iso639_2b) != 3) {
             throw new InvalidArgumentException(
                 'Iso 639-2b defines this code to be three digits in length.'
             );
@@ -220,7 +220,7 @@ class Language
      */
     public function setIso6392t($iso639_2t)
     {
-        if (strlen($iso639_2t) != 3) {
+        if (!is_null($iso639_2t) && strlen($iso639_2t) != 3) {
             throw new InvalidArgumentException(
                 'Iso 639-2t defines this code to be three digits in length.'
             );

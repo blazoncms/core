@@ -2,7 +2,7 @@
 
 namespace BlazonCms\Core\Exception;
 
-class InvalidArgumentException extends \InvalidArgumentException
+class InvalidArgumentException extends BlazonException
 {
     
 }
