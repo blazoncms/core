@@ -56,8 +56,7 @@ return [
         'cache' => [
             'adapter' => 'Memory',
             'plugins' => [],
-            'options' => [ //'namespace' => 'RcmCache'
-            ]
+            'options' => []
         ]
     ]
 ];
